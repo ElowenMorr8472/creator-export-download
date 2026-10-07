@@ -1,0 +1,21 @@
+{
+  "name": "creator-export-download",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/export_service.ts",
+    "example": "tsx scripts/request_export.ts",
+    "test": "tsx --test test/creator_export.test.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "npm run typecheck"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

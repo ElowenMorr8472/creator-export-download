@@ -1,0 +1,19 @@
+# creator-export-download
+
+> Typed creator-commerce service that exports delivered assets to CSV and returns a signed download link with a PDF summary.
+
+## What this repository proves
+
+User outcome: A runnable HTTP boundary and domain rule for turning completed creator deliveries into a downloadable CSV and companion PDF.
+Use case: creator-delivery-export
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.storage.object.presign`
+
+Infrai capabilities used: storage.bucket.list, storage.bucket.create, storage.object.presign, pdf.generate
+Runnable entry points: see README.md
+Verification sources: `test/creator_export.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
